@@ -4,7 +4,8 @@ class PicturesController < ApplicationController
   # GET /pictures
   # GET /pictures.json
   def index
-    @pictures = Picture.all
+    @random_no = rand(2..5)
+    @pictures = Picture.find(@random_no)
   end
 
   # GET /pictures/1
