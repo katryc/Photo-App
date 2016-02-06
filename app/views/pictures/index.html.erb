@@ -1,7 +1,15 @@
 <p id="notice"><%= notice %></p>
+<header>
+<h1>LETSMASH</h1>
+</header>
 
-<h1>Listing Pictures</h1>
-
-<%= image_tag @pictures.url %></td>
-
-<%= link_to 'New Picture', new_picture_path %>
+<div class="panel">
+<%= image_tag @picture_one.url %>
+<%=image_tag @picture_two.url %>
+<% @picture_one.url %>
+<% @picture_two.url %>
+</div>
+<%#= image_tag @pictures.find().url %>
+<footer>
+<%= link_to 'Results', new_picture_path %>
+</footer>
